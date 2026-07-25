@@ -39,8 +39,8 @@ impl<'a, I, C, T: Composable<I, (SessionInputs<'a, 'a>, C)>> PreProcessor<'a, I,
 
 
 /// Defines a generic post-processor
-pub trait PostProcessor<'a, O, C>: Composable<(SessionOutputs<'a, 'a>, C), O> {}
-impl<'a, O, C, T: Composable<(SessionOutputs<'a, 'a>, C), O>> PostProcessor<'a, O, C> for T {}
+pub trait PostProcessor<'a, O, C>: Composable<(SessionOutputs<'a>, C), O> {}
+impl<'a, O, C, T: Composable<(SessionOutputs<'a>, C), O>> PostProcessor<'a, O, C> for T {}
 
 
 /// Owns a pipeline, and references a model and some parameters to implement `Composable`
