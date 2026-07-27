@@ -12,8 +12,8 @@ repository = "https://github.com/fbilhaut/orp"
 documentation = "https://docs.rs/fbilhaut/orp"
 
 [dependencies]
-ort = { version = "=2.0.0-rc.9" }
-ndarray = { version = "0.16.0" }
+ort = { version = "=2.0.0-rc.12" }
+ndarray = { version = "0.17" }
 composable = { version = "0.9.0" }
 
 [features]
