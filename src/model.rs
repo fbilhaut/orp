@@ -89,7 +89,7 @@ impl Model {
             // for outputs, we just check that the expected ones are present (but having others is ok)
             let expected_outputs = &expected_outputs.collect();
             let actual_outputs: HashSet<_> = self.session.outputs.iter().map(|i| i.name.as_str()).collect();
-            if !actual_outputs.is_superset(&expected_outputs) {
+            if !actual_outputs.is_superset(expected_outputs) {
                 return UnexpectedModelSchemaError::new_for_output(expected_outputs, &actual_outputs).into_err();
             }
         }
