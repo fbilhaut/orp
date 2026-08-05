@@ -1,6 +1,6 @@
 [package]
 name = "orp"
-version = "0.9.3-SNAPSHOT"
+version = "1.0.0"
 edition = "2021"
 authors = ["Frédérik Bilhaut <frederik.bilhaut@gmail.com>"]
 license = "Apache-2.0"
@@ -14,7 +14,7 @@ documentation = "https://docs.rs/fbilhaut/orp"
 [dependencies]
 ort = { version = "=2.0.0-rc.9" }
 ndarray = { version = "0.16.0" }
-composable = { version = "0.9.0" }
+composable = { version = "1.0.0" }
 
 [features]
 default = []
