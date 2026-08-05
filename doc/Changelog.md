@@ -10,15 +10,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 
 * `Pipeline::expected_inputs` and `Pipeline::expected_outputs` now take the parameters as arguments (in case the expected tensors depend on them) and return iterators for greater flexibility.
-
 * Add `inspect` binary that can be used to display various model properties from metadata and input/output tensors
-
 * Switch to v1.0.0 of `composable`.
 
 
 ### Fixed
 
 * Fixed error message in case of expected/actual tensors mismatch.
+* Pin the `rc.9` version of `ort-sys` (`ort` was not doing so before `rc.10`, which would break builds of crates that depend on earlier versions, see [pykeio/ort#399](https://github.com/pykeio/ort/issues/399)).
 
 ## [0.9.2] - 2025-03-23
 

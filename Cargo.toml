@@ -13,6 +13,7 @@ documentation = "https://docs.rs/fbilhaut/orp"
 
 [dependencies]
 ort = { version = "=2.0.0-rc.9" }
+ort-sys = { version = "=2.0.0-rc.9", default-features = false } # see https://github.com/pykeio/ort/issues/399
 ndarray = { version = "0.16.0" }
 composable = { version = "1.0.0" }
 
